@@ -23,6 +23,7 @@ To perform data-driven analysis on COVID-19 datasets to understand the spread, t
 ## 📁 Project Structure
 
 covid19-data-analytics/
+
 ├── data/ # Raw and cleaned datasets
 
 ├── notebooks/ # Jupyter notebooks with EDA and analysis
