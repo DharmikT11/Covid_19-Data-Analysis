@@ -24,8 +24,11 @@ To perform data-driven analysis on COVID-19 datasets to understand the spread, t
 
 covid19-data-analytics/
 ├── data/ # Raw and cleaned datasets
+
 ├── notebooks/ # Jupyter notebooks with EDA and analysis
+
 ├── README.md # Project documentation
+
 └── requirements.txt # Required Python packages
 
 ## 📂 Dataset Sources
@@ -83,11 +86,3 @@ covid19-data-analytics/
 4. **Launch Jupyter Notebook**
    jupyter notebook notebooks/eda.ipynb
 
-✅ Future Enhancements
-    Add data visualizations using Matplotlib/Seaborn
-
-    Integrate real-time COVID-19 data via API
-
-    Create a simple web dashboard using Streamlit
-
-    Perform country-specific focused analysis
