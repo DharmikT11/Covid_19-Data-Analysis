@@ -1,89 +1,78 @@
-# 🦠 COVID-19 Data Analytics Project
+# Covid_19-Data-Analysis
 
-This project is a comprehensive **data analysis** of global COVID-19 datasets to derive meaningful insights using Python. It demonstrates the core skills of a **Data Analyst**, including data cleaning, preprocessing, EDA, and deriving conclusions from real-world data.
+This repository contains a Jupyter Notebook for in-depth data analysis and visualization of COVID-19 case and death data. The project demonstrates how to collect, process, analyze, and visualize time-series COVID-19 data, using Python and popular data science libraries.
 
----
+## Repository Structure
 
-## 🎯 Objective
+- **COVID_19_Data_Analysis_and_Visualization.ipynb**  
+  The main notebook containing the entire workflow, including data loading, cleaning, analysis, and plotting.
 
-To perform data-driven analysis on COVID-19 datasets to understand the spread, trends, and patterns of the virus globally and regionally. The goal is to showcase strong analytical thinking and data wrangling capabilities.
+## Features
 
----
+- **Data Collection:**  
+  Downloads and reads global COVID-19 time-series data for cases and deaths from public sources.
 
-## 🧰 Tools & Technologies Used
+- **Data Processing:**  
+  Cleans and structures the data for analysis, focusing on country/region and date breakdown.
 
-- **Python**
-- **Jupyter Notebook**
-- **Pandas** – for data cleaning and manipulation  
-- **NumPy** – numerical operations  
-- **Git & GitHub** – version control and project hosting
+- **Analysis:**  
+  - Computes active, recovered, and death cases over time.
+  - Aggregates data globally and by region.
+  - Calculates trends, peaks, and other relevant epidemiological metrics.
 
----
+- **Visualization:**  
+  - Plots global trends for cases and deaths.
+  - Visualizes recoveries and active cases over time.
+  - Utilizes matplotlib, seaborn, and pandas plotting features for clear insights.
 
-## 📁 Project Structure
+## Getting Started
 
-covid19-data-analytics/
+### Prerequisites
 
-├── data/ # Raw and cleaned datasets
+- Python 3.x
+- Jupyter Notebook
+- pandas, numpy, matplotlib, seaborn, geopandas, folium
 
-├── notebooks/ # Jupyter notebooks with EDA and analysis
+You can install the required libraries using pip:
 
-├── README.md # Project documentation
+```bash
+pip install pandas numpy matplotlib seaborn geopandas folium
+```
 
-└── requirements.txt # Required Python packages
+### Usage
 
-## 📂 Dataset Sources
+1. Clone this repository:
+    ```bash
+    git clone https://github.com/DharmikT11/Covid_19-Data-Analysis.git
+    cd Covid_19-Data-Analysis
+    ```
 
-- [Our World in Data – COVID-19 Dataset](https://ourworldindata.org/coronavirus)
-- [Kaggle COVID-19 Datasets](https://www.kaggle.com/datasets)
-- [Johns Hopkins University GitHub Repository](https://github.com/CSSEGISandData/COVID-19)
+2. Open the notebook in Jupyter:
+    ```bash
+    jupyter notebook COVID_19_Data_Analysis_and_Visualization.ipynb
+    ```
 
----
+3. Run the notebook cells to perform the analysis and view the results.
 
-## 🧹 What I Did (Project Steps)
+## Data Sources
 
-1. **Data Collection:**  
-   Downloaded COVID-19 related datasets from trusted sources.
+- [Johns Hopkins University CSSE COVID-19 Data](https://github.com/CSSEGISandData/COVID-19)
+- Other public datasets as referenced inside the notebook
 
-2. **Data Cleaning:**  
-   - Removed null and duplicate values  
-   - Standardized column names  
-   - Handled missing data  
-   - Converted date formats for time-series analysis
+## Example Outputs
 
-3. **Exploratory Data Analysis (EDA):**  
-   - Analyzed total confirmed, recovered, and death cases  
-   - Identified top affected countries  
-   - Calculated mortality and recovery rates  
-   - Examined country-wise and global trends
+The notebook will generate plots like:
 
-4. **Insights and Observations:**  
-   - Recovery rate was higher in countries with early containment  
-   - Some countries had underreporting due to limited testing  
-   - Countries with strong healthcare systems had lower death rates
+- Global trend of COVID-19 cases
+- Global trend of deaths and recoveries
+- Regional and country-specific analysis
 
----
+## Author
 
-## 📌 Sample Insights
+- [DharmikT11](https://github.com/DharmikT11)
 
-- 🟢 **Top 5 Countries with Highest Confirmed Cases**
-- 🔴 **Countries with Highest Mortality Rates**
-- 📈 **Daily Growth Trends Over Time**
-- 🧠 **Correlation between Testing and Confirmed Cases**
+## License
 
----
+This project is licensed under the MIT License.
 
-## 📦 How to Run the Project
-
-1. **Clone the Repository**
-   git clone https://github.com/your-username/covid19-data-analytics.git
-   
-2. **Navigate to the Folder**
-   cd covid19-data-analytics
-
-3. **Install Required Libraries**
-   pip install -r requirements.txt
-
-4. **Launch Jupyter Notebook**
-   jupyter notebook notebooks/eda.ipynb
 
